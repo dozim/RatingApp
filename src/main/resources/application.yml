@@ -1,0 +1,21 @@
+
+spring:
+  application:
+    name: RatingApp
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      username: postgres
+      password: password
+    url: jdbc:postgresql://localhost:5432/ratingdb
+
+
+application:
+  rest:
+    logging-level: INFO
